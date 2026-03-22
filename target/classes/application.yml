@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/blogging_application
+    username: postgres
+    password: Kasganj@123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+#  security:
+#    user:
+#      name: ansh
+#      password: ansh
+#      roles: ADMIN
+project:
+  image: images/
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
